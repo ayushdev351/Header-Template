@@ -1,0 +1,11 @@
+.App {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  background-image: url("https://wallpaperaccess.com/full/1812887.jpg");
+  background-color: grey;
+  background-size: 100%;
+}
