@@ -4,13 +4,11 @@ import styled from "styled-components";
 function Main() {
   return (
     <MyMain>
-      <p> Hi Mafjhvvvhbin</p>
+      <p> Hello</p>
     </MyMain>
   );
 }
 
 export default Main;
 
-const MyMain = styled.div`
-  background-color: red;
-`;
+const MyMain = styled.div``;
