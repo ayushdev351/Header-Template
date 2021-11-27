@@ -3,7 +3,7 @@ import Header from "./header.js";
 
 function DashBoard() {
   return (
-    <div>
+    <MyDashBoard>
       <Banner>
         <div>
           envato market
@@ -13,11 +13,20 @@ function DashBoard() {
         </div>
       </Banner>
       <Header />
-    </div>
+      <Card>
+        <h1 className="heading">Sample</h1>
+        <p>Data : Sample data 1</p>
+        <p>Data : Sample data 2</p>
+      </Card>
+    </MyDashBoard>
   );
 }
 
 export default DashBoard;
+
+const MyDashBoard = styled.div`
+  height: 100vh;
+`;
 
 const Banner = styled.div`
   margin-top: 0;
@@ -41,5 +50,26 @@ const Banner = styled.div`
         border-radius: 5px;
       }
     }
+  }
+`;
+
+const Card = styled.div`
+  color: white;
+  margin-top: 6%;
+  margin-left: 2%;
+  width: 300px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: solid white;
+  border-width: 2px 2px;
+
+  > h1 {
+    font-size: 30px;
+    padding-left: 4px;
+  }
+
+  > p {
+    padding-left: 4px;
+    color: grey;
   }
 `;
